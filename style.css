@@ -1,144 +1,198 @@
 * {
-  font-family: 'Advent Pro', sans-serif;
+  font-family: "Advent Pro", sans-serif;
 }
 
 body {
   font-size: 30px;
-  margin-top: 120px;
+  height: 10000px;
+  margin-top: 87px;
 }
-  
+
+nav {
+  display: block;
+  padding: 20px 20px;
+  background-color: rgb(97, 230, 177);
+  font-size: 30px;
+  color: white;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  border: 1px red solid;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-shadow: 0 0 10px rgb(255, 255, 255);
+  transition-duration: 0.35s;
+  cursor: pointer;
+  color: rgb(52, 167, 132);
+}
+
+.s2iLink {
+  color: rgb(58, 197, 155);
+}
+.s2iLink:hover {
+  color: rgb(97, 230, 177);
+}
+
+.container-xl {
+  border: 2px solid red;
+}
+
+.col-md-4,
+.col-md-8 {
+  border: 2px solid green;
+}
+
+.myphoto {
+  max-width: 220px;
+  min-width: 40px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+.benvenuto-md,
+.presentazione-md {
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+}
+
+.benvenuto-md {
+  font-weight: 600;
+  padding-left: 5px;
+}
+
+.container-xl {
+  background-color: white;
+}
+
+.container-xxl {
+  /* background-color: pink; */
+  height: 100%;
+  position: relative;
+}
+
+.presentazione-md {
+  font-size: 23px;
+  padding-left: 20px;
+  margin-top: 5px;
+}
+
+.smile,
+.testo {
+  display: flex;
+  align-items: center;
+  border: 1px solid green;
+  margin-left: 15px;
+}
+
+.smileImg {
+  max-width: 30px;
+}
+
+h2 {
+  margin: 10px 0;
+}
+
+.ikigaiImg {
+  width: 23px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.listItem {
+  font-size: 25px;
+  margin-bottom: -10px;
+}
+
+.s2i {
+  color: rgb(97, 230, 177);
+  font-weight: 600;
+}
+
+/* scrita arcobaleno */
+.arcobaleno {
+  background-image: linear-gradient(
+    to right,
+    violet,
+    indigo,
+    blue,
+    green,
+    yellow,
+    orange,
+    red
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.familyImg,
+.catImg,
+.pizzaImg,
+.codingImg {
+  margin-bottom: 10px;
+  margin-top: -10px;
+  width: 200px;
+}
+
+h3 {
+  margin-bottom: 40px;
+  padding-top: 10px;
+}
+
+.titleEducation {
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+
+.col,
+.col-4,
+.col-5 {
+  border: 1px black solid;
+}
+
+@media (max-width: 767px) {
   nav {
-    padding: 20px 100px;
-    background-color: rgb(97, 230, 177);
-    font-size: 30px;
-    color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    display: none;
   }
-
-  .row {
-    display: flex;
-    justify-content: center;
-  }
-  
-  a {
-    text-decoration: none;
-    color: white;
-  }
-
-  a:hover {
-    text-shadow: 0 0 10px rgb(255, 255, 255);
-    transition-duration: 1s;
-    cursor: pointer;
-    color: rgb(52, 167, 132);
-  }
-
-  .s2iLink {
-    color: rgb(58, 197, 155);
-  }
-  .s2iLink:hover {
-    color: rgb(97, 230, 177);
-  }
- 
-  /* .container-xl {
-    border: 2px solid red;
-  } */
-
-  /* .col-md-4,
-  .col-md-8 {
-    border: 2px solid green;
-  } */
-
-  .myphoto {
-    max-width: 220px;
-    min-width: 40px;
-    margin-bottom: 20px;
-    margin-top: 10px;
-  }
-
-  .benvenuto-md,
-  .presentazione-md {
-    /* border: 1px solid red; */
-    display: flex;
-    align-items: center;
-  }
-
-  .benvenuto-md {
-    font-weight: bold;
-    padding-left: 5px;
-  }
-
-  .presentazione-md {
-    font-size: 23px;
-    padding-left: 13px;
-    margin-top: 5px;
-  }
-
-  .smile,
-  .testo {
-    display: flex;
-    align-items: center;
-    /* border: 1px solid green; */
-    margin-left: 8px;
-
-  }
-
-  .smileImg {
-    max-width: 30px;
-  }
-
-  h2 {
-    margin: 10px 0;
-  }
-  
-  .ikigaiImg {
-    width: 23px;
-  }
-
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
-
-  .listItem {
+  h2 {
     font-size: 25px;
-    margin-bottom: -10px;
   }
 
-  .s2i {
-    color: rgb(97, 230, 177);
-    font-weight: 600;
-  }
-
-  /* scrita arcobaleno */
-  .arcobaleno {
-    background-image: linear-gradient(to right, violet, indigo, blue, green, yellow, orange, red);
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .familyImg,
-  .catImg,
-  .pizzaImg,
-  .codingImg {
-    margin-bottom: 10px;
-    margin-top: -10px;
-    width: 200px;
-  }
-
-  h3 {
-    margin-bottom: 40px;
-  }
-
-  @media (min-width: 280px) {
-    .myphoto {
-    margin-top: 100px;
-    }
-  }
-
-  @media (min-width: 760px) and (max-width: 7000px) {
   .myphoto {
     margin-top: 10px;
+    max-width: 300px;
   }
+}
+
+@media (min-width: 200px) {
+  .myphoto {
+    margin-top: 10px;
+    max-width: 100px;
   }
+}
+
+@media (min-width: 760px) and (max-width: 7000px) {
+  .myphoto {
+    margin-top: 10px;
+    max-width: 150px;
+  }
+}
