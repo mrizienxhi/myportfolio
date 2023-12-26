@@ -28,13 +28,13 @@ body {
   list-style: none;
   font-weight: 500;
   text-align: center;
-  padding: 0 16px;
+  padding: 0 15px;
 }
 
 .navbar-links li a {
   text-decoration: none;
   color: white;
-  padding: 10px 16px;
+  padding: 10px 15px;
   display: block;
 }
 
@@ -100,6 +100,14 @@ a:hover {
   padding: 10px 0;
 }
 
+.bitmoji {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  max-width: 200px;
+}
+
 .benvenuto-md,
 .presentazione-md {
   border: 1px solid red;
@@ -120,7 +128,7 @@ a:hover {
   background-color: pink;
   height: 100%;
   position: relative;
-  margin-top: -30px;
+  margin-top: -40px;
 }
 
 .presentazione-md {
@@ -147,6 +155,7 @@ h2 {
 
 .ikigaiImg {
   width: 23px;
+  margin-bottom: 6px;
 }
 
 p {
@@ -193,22 +202,80 @@ h3 {
   padding-top: 10px;
 }
 
-.titleEducation {
+.titleEducation,
+.titleEducationRight {
   font-weight: 600;
   display: flex;
-  justify-content: center;
+  padding: 10px 10px 0 10px;
+}
+
+.titleEducationText,
+.titleEducationTextRight {
+  display: flex;
+  padding: 10px 10px 0 10px;
+}
+
+.titleEducation,
+.titleEducationText {
+  justify-content: left;
+  text-align: left;
+}
+
+.titleEducationRight,
+.titleEducationTextRight {
+  justify-content: right;
+  text-align: right;
 }
 
 .col,
-.col-4,
-.col-5 {
+.col-2,
+.col-10 {
   border: 1px black solid;
+  background-color: yellow;
+  align-items: center;
+}
+
+.col-md-4,
+.col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-text {
+  text-align: center;
+  background-color: white;
+}
+.row-text p {
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.flower {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imgFlower {
+  width: 20px;
+  height: 20px;
+  margin: -20px 10px;
 }
 
 @media (max-width: 767px) {
   .logoenxhi {
     margin-top: 38px;
     margin-left: 30px;
+  }
+
+  .col-2 {
+    display: none;
+  }
+  .col-10 {
+    width: 100%;
   }
 
   .navbar-links {
@@ -243,7 +310,7 @@ h3 {
   }
 
   p {
-    font-size: 18px;
+    font-size: 20px;
   }
   h2 {
     font-size: 25px;
@@ -265,14 +332,52 @@ h3 {
   }
 }
 
+@media (min-width: 767px) and (max-width: 800px) {
+  .bitmoji {
+    max-width: 100%;
+  }
+  .col-2 {
+    min-width: 12%;
+    max-width: 12%;
+    align-items: center;
+  }
+  .col-10 {
+    min-width: 88%;
+    max-width: 88%;
+  }
+}
+
+@media (min-width: 801px) and (max-width: 15000px) {
+  .bitmoji {
+    max-width: 100%;
+  }
+  .col-2 {
+    min-width: 15%;
+    max-width: 15%;
+    align-items: center;
+  }
+  .col-10 {
+    min-width: 85%;
+    max-width: 85%;
+  }
+}
 @media (min-width: 768px) and (max-width: 15000px) {
   .myphoto {
     margin-top: 10px;
     margin-left: -20px;
-    max-width: 250px;
+    max-width: 90%;
+    align-items: center;
   }
 
   .navbar-links {
     display: flex;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  p.title {
+    font-size: 30px;
   }
 }
