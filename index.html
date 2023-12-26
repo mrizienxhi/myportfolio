@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Enxhi</title>
-    <link rel="icon" type="image/png" href="images/ikigai.png">
+    <link rel="icon" type="image/png" href="images/favicon.svg">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,47 +12,50 @@
         <link href="https://fonts.googleapis.com/css2?family=Abel&family=Advent+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Caveat:wght@400;700&family=Dosis:wght@200;300;400;500;600;700;800&family=Foldit:wght@300&family=Handlee&family=Indie+Flower&family=Itim&family=Macondo&family=Nanum+Brush+Script&family=Neucha&family=Nunito:wght@200&family=PT+Sans:wght@400;700&family=Pangolin&family=Playfair:wght@300;700&family=Quicksand:wght@300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reenie+Beanie&family=Roboto:wght@400;500;700&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
         <body>
 
-    <!-- barra di navigazione orizzontale -->
-    <nav>
-      <div class="menu text-center" id="about">
-        <div class="row">
-          <div class="col-md-2">
-            <a href="#about">Formazione</a>
-          </div>
-          <div class="col-md-2">
-            <a href="#cv">Lavoro</a>
-          </div>
-          <div class="col-md-2">
-            <a href="#contacts">Contatti</a>
-          </div>
-        </div>
+    <!-- NAV BAR -->
+    <nav class="navbar">
+      <div class="brand-title"><img class="logoenxhi" src="/images/logoenxhi.svg" alt=""></div>
+      
+      <!-- menu hamburger -->
+      <a href="#" class="hamburger-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <!-- fine menu hamburger -->
+
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#">Chi sono</a></li>
+          <li><a href="#">Formazione</a></li>
+          <li><a href="#">Contatti</a></li>
+        </ul>
       </div>
     </nav>
-
 
     <!-- contenuto sito -->
     <div class="container-xxl">
       <div class="container-xl mt-5 mb-5"> 
         <div class="row ms-4 me-4" >
           <div class="col-md-4 text-center">
-            <img class= "myphoto" src="./images/enxhifoto.jpg">
+            <img class= "myphoto" src="./images/hi.png">
           </div>
           <div class="col-md-8">
             
             <div class="benvenuto-md align-items-center">
               <div class="testo">
-                <h2>Benvenuta, benvenuto!</h2>
+                <h2>Benvenuti nel mio portfolio</h2>
               </div>
               <div class="smile">
                 <img class="smileImg" src="./images/smile.jpg">
               </div>
             </div>
             <div class="presentazione-md align-items-center">
-              <p>Mi chiamo Enxhi e sono una studentessa di Sviluppo Web Front End su <span class="s2i"><a class="s2iLink" href="https://talent.start2impact.it/profile/enxhi-mrizi" target="_blank">Start2Impact</a></span><span> <img class="ikigaiImg" src="./images/ikigai.png" alt=""></span>.
-              <br> Lavoro nel settore logistico da oltre 7 anni e da sempre nutro interesse per il mondo dello sviluppo Web. <br>
-              Ho un diploma di ragioneria ed una <span class="arcobaleno">coloratissima</span> storia formativa!
+              <p>Mi chiamo Enxhi e sono una lavoratrice a tempo pieno e studentessa di Sviluppo Web Front End su <span class="s2i"><a class="s2iLink" href="https://talent.start2impact.it/profile/enxhi-mrizi" target="_blank">Start2Impact</a></span><span> <img class="ikigaiImg" src="./images/ikigai.png" alt=""></span>.
+              <br> Lavoro nel settore logistico da circa 8 anni ma nutro un forte interesse per lo sviluppo Web dalle scuole superiori.<br>
+              Ho il diploma di ragioneria ed un <span class="arcobaleno">coloratissimo</span> percorso formativo.
             <br>
-            Sono una persona curiosa, mi piace mettermi in gioco e sono sempre alla ricerca di nuove sfide. <br>
+            Sono una persona curiosa, mi piace mettermi in gioco e sono sempre alla ricerca di nuove sfide. <span><img class="pollicesu" src="images/pollicesu.png" alt=""></span> <br>
             Mi piace la programmazione perchè permette di dare forma alla propria creatività;
           </p>
           </div>
@@ -84,7 +87,7 @@
 
 
       
-      <div class="container-xl">
+      <!-- <div class="container-xl">
        <div class="row text-center">
         <h3>Le cose che mi rendono felice :</h3>
        </div>
@@ -100,13 +103,22 @@
         <div class="col-sm-3 pt-2 pb-2"><p class="listItem">Programmare</p> <br>
         <img class="codingImg" src="./images/conding.png" alt=""></div>
        </div>
-      </div>
+      </div> -->
       
 
     </div>
     
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
+
+<script>
+  const hamburgerMenu = document.getElementsByClassName("hamburger-menu")[0]
+  const navbarLinks = document.getElementsByClassName("navbar-links")[0]
+
+  hamburgerMenu.addEventListener("click", () =>{
+    navbarLinks.classList.toggle("active");
+  })
+</script>
 
 </body>
 </html>

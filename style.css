@@ -1,42 +1,75 @@
 * {
   font-family: "Advent Pro", sans-serif;
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
-  height: 10000px;
-  margin-top: 87px;
 }
 
-nav {
-  display: block;
-  padding: 20px 20px;
-  background-color: rgb(97, 230, 177);
-  font-size: 30px;
-  color: white;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.row {
+.navbar {
   display: flex;
-  justify-content: center;
-  border: 1px red solid;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(242, 184, 216);
+  color: white;
+  padding: 0 10px;
+}
+
+.navbar-links ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  list-style: none;
+  font-weight: 500;
+  text-align: center;
+  padding: 0 16px;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 16px;
+  display: block;
+}
+
+.hamburger-menu {
+  position: absolute;
+  top: 3rem;
+  right: 2rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 25px;
+}
+
+.hamburger-menu .bar {
+  height: 3px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
 }
 
 a {
   text-decoration: none;
-  color: white;
+}
+
+.logoenxhi {
+  max-width: 220px;
+  margin-left: 30px;
 }
 
 a:hover {
   text-shadow: 0 0 10px rgb(255, 255, 255);
   transition-duration: 0.35s;
   cursor: pointer;
-  color: rgb(52, 167, 132);
+  color: rgb(167, 52, 157);
 }
 
 .s2iLink {
@@ -55,11 +88,16 @@ a:hover {
   border: 2px solid green;
 }
 
+.pollicesu {
+  width: 25px;
+  margin-bottom: 8px;
+}
+
 .myphoto {
   max-width: 220px;
   min-width: 40px;
-  margin-bottom: 20px;
-  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px 0;
 }
 
 .benvenuto-md,
@@ -79,9 +117,10 @@ a:hover {
 }
 
 .container-xxl {
-  /* background-color: pink; */
+  background-color: pink;
   height: 100%;
   position: relative;
+  margin-top: -30px;
 }
 
 .presentazione-md {
@@ -167,9 +206,42 @@ h3 {
 }
 
 @media (max-width: 767px) {
-  nav {
-    display: none;
+  .logoenxhi {
+    margin-top: 38px;
+    margin-left: 30px;
   }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    text-align: center;
+  }
+
+  .navbar-links li a {
+    padding: 0.3rem 1rem;
+  }
+
+  .navbar-links.active {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
   p {
     font-size: 18px;
   }
@@ -177,22 +249,30 @@ h3 {
     font-size: 25px;
   }
 
+  body {
+    margin-top: -30px;
+  }
   .myphoto {
     margin-top: 10px;
-    max-width: 300px;
+    max-width: 200px;
   }
 }
 
-@media (min-width: 200px) {
+@media (min-width: 100px) {
   .myphoto {
     margin-top: 10px;
-    max-width: 100px;
+    max-width: 130px;
   }
 }
 
-@media (min-width: 760px) and (max-width: 7000px) {
+@media (min-width: 768px) and (max-width: 15000px) {
   .myphoto {
     margin-top: 10px;
-    max-width: 150px;
+    margin-left: -20px;
+    max-width: 250px;
+  }
+
+  .navbar-links {
+    display: flex;
   }
 }
