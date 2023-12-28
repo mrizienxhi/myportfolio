@@ -1,6 +1,7 @@
 * {
   font-family: "Advent Pro", sans-serif;
   box-sizing: border-box;
+  cursor: url("./images/pointer.png"), auto;
 }
 
 body {
@@ -12,9 +13,8 @@ body {
 .navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  background-color: rgb(242, 184, 216);
-  color: white;
+  align-items: first baseline;
+  background-image: url("images/wave.svg");
   padding: 0 10px;
 }
 
@@ -33,7 +33,7 @@ body {
 
 .navbar-links li a {
   text-decoration: none;
-  color: white;
+  color: black;
   padding: 10px 15px;
   display: block;
 }
@@ -52,12 +52,13 @@ body {
 .hamburger-menu .bar {
   height: 3px;
   width: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
   border-radius: 20px;
 }
 
 a {
   text-decoration: none;
+  color: palevioletred;
 }
 
 .logoenxhi {
@@ -68,8 +69,8 @@ a {
 a:hover {
   text-shadow: 0 0 10px rgb(255, 255, 255);
   transition-duration: 0.35s;
-  cursor: pointer;
-  color: rgb(167, 52, 157);
+  color: rgb(131, 45, 67);
+  cursor: url("./images/pawprint.png"), auto;
 }
 
 .s2iLink {
@@ -80,12 +81,26 @@ a:hover {
 }
 
 .container-xl {
-  border: 2px solid red;
+  /* border: 2px solid red; */
+  width: 100%;
 }
 
-.col-md-4,
+/* .col-md-4,
 .col-md-8 {
   border: 2px solid green;
+} */
+
+.col-md-4 {
+  width: 30%;
+}
+
+.col-md-8 {
+  width: 70%;
+}
+
+.row-ms-4 {
+  display: flex;
+  justify-content: center;
 }
 
 .pollicesu {
@@ -110,9 +125,10 @@ a:hover {
 
 .benvenuto-md,
 .presentazione-md {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .benvenuto-md {
@@ -125,10 +141,10 @@ a:hover {
 }
 
 .container-xxl {
-  background-color: pink;
+  background-color: rgb(255, 255, 255);
   height: 100%;
   position: relative;
-  margin-top: -40px;
+  /* margin-top: -92px; */
 }
 
 .presentazione-md {
@@ -141,7 +157,7 @@ a:hover {
 .testo {
   display: flex;
   align-items: center;
-  border: 1px solid green;
+  /* border: 1px solid green; */
   margin-left: 15px;
 }
 
@@ -184,6 +200,7 @@ p {
     orange,
     red
   );
+  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -230,26 +247,45 @@ h3 {
 .col,
 .col-2,
 .col-10 {
-  border: 1px black solid;
-  background-color: yellow;
+  /* border: 1px black solid;
+  background-color: yellow; */
   align-items: center;
 }
 
 .col-md-4,
-.col-2 {
+.col-2,
+.col-4 {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+
+.col-4 {
+  border: 2px pink solid;
+  height: 150px;
+  width: 200px;
+}
+
+.row-competenza {
+  display: flex;
   justify-content: center;
 }
 
 .row-text {
   text-align: center;
   background-color: white;
+  margin-top: -20px;
 }
 .row-text p {
   font-size: 35px;
   margin-top: 10px;
   margin-bottom: 5px;
+}
+
+.row {
+  display: flex;
+  margin: auto;
+  width: 80%;
 }
 
 .flower {
@@ -265,10 +301,80 @@ h3 {
   margin: -20px 10px;
 }
 
+.formazione {
+  display: block;
+  justify-content: center;
+}
+
+.eduIcons {
+  min-width: 80px;
+  max-width: 100px;
+  padding: 5px;
+  margin: 2px 10px;
+}
+
+.competenze {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.col-5 {
+  width: 30%;
+}
+
+.col-7 {
+  width: 70%;
+}
+
+@media (max-width: 800px) {
+  .col-4 {
+    min-width: 130px;
+    max-width: 180px;
+  }
+
+  .competenze {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 520px) {
+  .col-4 {
+    min-width: 40px;
+    max-width: 100px;
+  }
+
+  .competenze {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 767px) {
   .logoenxhi {
     margin-top: 38px;
     margin-left: 30px;
+  }
+
+  .col-5 {
+    display: none;
+  }
+
+  .col-7 {
+    width: 100%;
+  }
+
+  .navbar {
+    background-repeat: no-repeat;
+  }
+
+  .col-md-4 {
+    display: none;
+  }
+
+  .col-md-8 {
+    width: 100%;
   }
 
   .col-2 {
@@ -289,12 +395,13 @@ h3 {
   }
 
   .navbar-links ul {
-    flex-direction: column;
     width: 100%;
+    flex-direction: column;
   }
 
   .navbar-links li {
     text-align: center;
+    background-color: transparent;
   }
 
   .navbar-links li a {
@@ -316,12 +423,31 @@ h3 {
     font-size: 25px;
   }
 
+  p.title {
+    font-size: 25px;
+  }
+
+  p.text {
+    font-size: 20px;
+  }
+
   body {
     margin-top: -30px;
   }
   .myphoto {
     margin-top: 10px;
     max-width: 200px;
+  }
+
+  .col-4 {
+    width: 50%;
+  }
+}
+
+@media (max-width: 320px) {
+  .logoenxhi {
+    max-width: 50%;
+    align-items: flex-start;
   }
 }
 
@@ -336,14 +462,14 @@ h3 {
   .bitmoji {
     max-width: 100%;
   }
-  .col-2 {
-    min-width: 12%;
-    max-width: 12%;
+  .col-md-4 {
+    min-width: 20%;
+    max-width: 20%;
     align-items: center;
   }
-  .col-10 {
-    min-width: 88%;
-    max-width: 88%;
+  .col-md-8 {
+    min-width: 80%;
+    max-width: 80%;
   }
 }
 
@@ -351,16 +477,17 @@ h3 {
   .bitmoji {
     max-width: 100%;
   }
-  .col-2 {
-    min-width: 15%;
-    max-width: 15%;
+  .col-md-4 {
+    min-width: 20%;
+    max-width: 20%;
     align-items: center;
   }
-  .col-10 {
-    min-width: 85%;
-    max-width: 85%;
+  .col-md-8 {
+    min-width: 80%;
+    max-width: 80%;
   }
 }
+
 @media (min-width: 768px) and (max-width: 15000px) {
   .myphoto {
     margin-top: 10px;
@@ -374,10 +501,18 @@ h3 {
   }
 
   p {
-    font-size: 22px;
+    font-size: 25px;
   }
 
   p.title {
-    font-size: 30px;
+    font-size: 27px;
+  }
+
+  p.text {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-size: 35px;
   }
 }
