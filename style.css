@@ -45,12 +45,20 @@ body {
   width: 100%;
 }
 
+.intTitle p {
+  font-size: 22px;
+}
+
+.intJstext h3 {
+  font-size: 25px;
+}
+
 .introductionText {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  padding: 5px 20px;
+  margin-left: 30px;
 }
 
 .navbar {
@@ -151,11 +159,16 @@ a:hover {
   margin-bottom: 8px;
 }
 
-.myphoto {
-  min-width: 40px;
-  margin-bottom: 10px;
-  padding: 10px 0;
-  margin-left: 50px;
+.containermyphoto {
+  display: flex;
+  justify-content: flex-end;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.containermyphoto .myphoto {
+  max-width: 250px;
+  min-width: 120px;
 }
 
 .bitmoji {
@@ -510,6 +523,38 @@ textarea {
     max-width: 180px;
   }
 
+  .containermyphoto {
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+  }
+  
+  .containermyphoto .myphoto {
+    width: 100%;
+  }
+  
+  .introduction {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .introductionText {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .centerIntroduction {
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+  }
+
   .competenze {
     width: 100%;
     flex-direction: column;
@@ -567,6 +612,18 @@ textarea {
 
   .competenze {
     width: 100%;
+  }
+
+  .centerIntroduction p {
+    font-size: 15px;
+  }
+
+  .centerIntroduction h1 {
+    font-size: 25px;
+  }
+
+  .centerIntroduction h3 {
+    font-size: 18px;
   }
 }
 
@@ -671,12 +728,6 @@ textarea {
   body {
     margin-top: -30px;
   }
-  .myphoto {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-    max-width: 140px;
-  }
 
   .col-4 {
     width: 50%;
@@ -687,13 +738,6 @@ textarea {
   .logoenxhi {
     max-width: 50%;
     align-items: flex-start;
-  }
-}
-
-@media (min-width: 100px) {
-  .myphoto {
-    margin-top: 10px;
-    max-width: 130px;
   }
 }
 
@@ -728,12 +772,6 @@ textarea {
 }
 
 @media (min-width: 768px) and (max-width: 15000px) {
-  .myphoto {
-    margin-top: 10px;
-    max-width: 70%;
-    align-items: end;
-  }
-
   .navbar-links {
     display: flex;
   }
