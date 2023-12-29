@@ -35,7 +35,37 @@
 
     <!-- contenuto sito -->
     <div class="container-xxl">
-      <div class="container-xl mt-5 mb-5"> 
+
+      <div class="introduction">
+        <div class="myphoto">
+          <img class= "myphoto" src="./images/hellovideo.gif">
+        </div>
+        <div class="centerIntroduction">
+          <div class="introductionText">
+            <div class="intTitle"><h1>Benvenuti nel mio portfolio</h1> <p>Mi presento, mi chiamo Enxhi (Engi), e sono:</p>
+            </div>
+            <div class="intJstext"><div class="funzionejs">
+              <h3 id="elencoparole"></h3></div></div><h3></h3>
+          </div>
+        </div>
+      </div>
+      
+      <div class="containerPresentation">
+        <div class="presentation">
+          <p>Mi chiamo Enxhi e sono una studentessa di Sviluppo Front End su <span class="s2i"><a class="s2iLink" href="https://talent.start2impact.it/profile/enxhi-mrizi" target="_blank">Start2Impact</a></span><span> <img class="ikigaiImg" src="./images/ikigai.png" alt=""></span>.
+          <br> Ho maturato un buon bagaglio di esperienza nel settore logistico, nel quale lavoro da circa 8 anni.<br>
+          Dopo il diploma ho maturato un <span class="arcobaleno">coloratissimo</span> percorso formativo.
+        <br>
+        Sono una persona curiosa, mi piace mettermi in gioco e sono sempre alla ricerca di nuove sfide. <span><img class="pollicesu" src="images/pollicesu.png" alt=""></span> <br>
+        Ho iniziato a studiare programmazione perchè mi piace dare sfogo alla creatività e perchè penso che sia un percorso ricco di sfide che si possono affrontare solo con un costante apprendimento. <br> A proposito di apprendimento, sei curioso di conoscere il mio background? Di seguito troverai il mio percorso formativo.</p>
+      </div>
+            </div>
+      
+
+    <br>
+
+
+      <!-- <div class="container-xl mt-5 mb-5"> 
         <div class="row-ms-4 me-4" >
           <div class="col-md-4 text-center">
             <img class= "myphoto" src="./images/hellovideo.gif">
@@ -61,7 +91,7 @@
           </div>
           </div>
         </div>
-      </div> 
+      </div>  -->
 
       <div class="decoration">
         <img class="decorationImage" src="./images/decorazione.png" alt="">
@@ -342,6 +372,19 @@
   hamburgerMenu.addEventListener("click", () =>{
     navbarLinks.classList.toggle("active");
   })
+
+  let words = ["Un operatore logistico &#128666;", "Ragioniere programmatore &#128187;", "Un'attenta osservatrice &#129300;", "Una persona entusiasta e propositiva &#129488;", "Una figura in costante aggiornamento &#9851;", "...ed in costante crescita professionale &#128200;", "Una ragazza curiosa ed intraprendente &#129300;", "Una persona seria ed affidabile &#128188;","Portatrice sana di buon umore! &#128522;"];
+let counter = 0;
+let word = document.getElementById("elencoparole");
+setInterval(update_carousel_words, 2000);
+function update_carousel_words(){
+  word.innerHTML= words[counter];
+  counter++;
+  if(counter>=words.length){
+    counter=0;
+  }
+}
+
 </script>
 
 </body>

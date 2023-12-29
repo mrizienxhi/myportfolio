@@ -10,6 +10,49 @@ body {
   font-size: 30px;
 }
 
+.introduction {
+  width: 100%;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.containerPresentation {
+  display: flex;
+  justify-content: center;
+}
+
+.presentation {
+  display: flex;
+  justify-content: flex-start;
+  width: 80%;
+  margin-top: 10px;
+}
+
+.centerIntroduction {
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
+  align-items: center;
+}
+
+.presentation p {
+  text-align: center;
+}
+
+.intJstext,
+.intTitle {
+  width: 100%;
+}
+
+.introductionText {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 20px;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -109,10 +152,10 @@ a:hover {
 }
 
 .myphoto {
-  max-width: 220px;
   min-width: 40px;
   margin-bottom: 10px;
   padding: 10px 0;
+  margin-left: 50px;
 }
 
 .bitmoji {
@@ -629,8 +672,10 @@ textarea {
     margin-top: -30px;
   }
   .myphoto {
+    display: flex;
+    justify-content: center;
     margin-top: 10px;
-    max-width: 200px;
+    max-width: 140px;
   }
 
   .col-4 {
@@ -685,9 +730,8 @@ textarea {
 @media (min-width: 768px) and (max-width: 15000px) {
   .myphoto {
     margin-top: 10px;
-    margin-left: -20px;
-    max-width: 90%;
-    align-items: center;
+    max-width: 70%;
+    align-items: end;
   }
 
   .navbar-links {
