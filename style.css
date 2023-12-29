@@ -425,6 +425,11 @@ textarea {
   font-size: 25px;
 }
 
+.socialTesto {
+  width: 40%;
+  text-align: right;
+}
+
 .socialIcone img {
   width: 20%;
   padding-left: 15px;
@@ -466,11 +471,37 @@ textarea {
     width: 100%;
     flex-direction: column;
   }
+
+  .socialBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socialIcone {
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .socialTesto {
+    text-align: center;
+  }
 }
 
 .eduIcons:hover {
   transform: scale(1.2);
   transition: all 0.3s linear;
+}
+
+.smile {
+  display: inline;
+}
+
+.smile img {
+  width: 30px;
+  padding-right: 5px;
+  padding-left: -5px;
 }
 
 @media (max-width: 520px) {
@@ -479,9 +510,20 @@ textarea {
     max-width: 100px;
   }
 
+  .socialBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .socialIcone {
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
   .competenze {
     width: 100%;
-    flex-direction: column;
   }
 }
 
@@ -496,18 +538,18 @@ textarea {
     bottom: 30px;
     right: 20px;
   }
-  
+
   .goBack img {
     width: 40px;
   }
 
   .byeSticker {
     display: none;
-    }
-  
-    .contactForm {
-      width: 100%;
-    }
+  }
+
+  .contactForm {
+    width: 100%;
+  }
 
   .col-5 {
     display: none;
