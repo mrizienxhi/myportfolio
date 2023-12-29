@@ -247,8 +247,7 @@ h3 {
 .col,
 .col-2,
 .col-10 {
-  /* border: 1px black solid;
-  background-color: yellow; */
+  /* background-color: yellow; */
   align-items: center;
 }
 
@@ -261,7 +260,7 @@ h3 {
 }
 
 .col-4 {
-  border: 2px pink solid;
+  /* border: 2px pink solid; */
   height: 150px;
   width: 200px;
 }
@@ -327,6 +326,122 @@ h3 {
   width: 70%;
 }
 
+.decorationImage {
+  width: 100%;
+}
+
+.decorationImage2 {
+  width: 70%;
+}
+
+.contactForm {
+  width: 50%;
+  background-color: #fdd1dc6f;
+  border: 3px #fdd1dc solid;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+textarea {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px #fdd1dc solid;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events: none;
+  transition: 0.5s;
+  color: grey;
+}
+
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span {
+  color: #e91e63;
+  font-size: 12px;
+  transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"] {
+  width: 40%;
+  background-color: #fdd1dc;
+  color: black;
+  border: none;
+  cursor: url("./images/pawprint.png"), auto;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  border: 10px #fdd1dc dotted;
+  padding: 20px 0;
+  border-radius: 20px;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: center;
+}
+
+.byeSticker {
+  width: 200px;
+}
+
+.byemoji {
+  width: 130%;
+}
+
+.socialBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 25px;
+}
+
+.socialIcone img {
+  width: 20%;
+  padding-left: 15px;
+  cursor: url("./images/pawprint.png"), auto;
+}
+
+.socialIcone {
+  padding: 10px 20px;
+}
+
+.footer {
+  width: 100%;
+  background-color: #fdd1dc;
+  font-size: 22px;
+  text-align: center;
+}
+
 @media (max-width: 800px) {
   .col-4 {
     min-width: 130px;
@@ -337,6 +452,11 @@ h3 {
     width: 100%;
     flex-direction: column;
   }
+}
+
+.eduIcons:hover {
+  transform: scale(1.2);
+  transition: all 0.3s linear;
 }
 
 @media (max-width: 520px) {
@@ -356,6 +476,14 @@ h3 {
     margin-top: 38px;
     margin-left: 30px;
   }
+
+  .byeSticker {
+    display: none;
+    }
+  
+    .contactForm {
+      width: 100%;
+    }
 
   .col-5 {
     display: none;
