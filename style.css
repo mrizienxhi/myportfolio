@@ -442,6 +442,20 @@ textarea {
   text-align: center;
 }
 
+.goBack {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+}
+
+.goBack img {
+  width: 50px;
+}
+
+.goBack img:hover {
+  cursor: url("./images/pawprint.png"), auto;
+}
+
 @media (max-width: 800px) {
   .col-4 {
     min-width: 130px;
@@ -475,6 +489,16 @@ textarea {
   .logoenxhi {
     margin-top: 38px;
     margin-left: 30px;
+  }
+
+  .goBack {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+  }
+  
+  .goBack img {
+    width: 40px;
   }
 
   .byeSticker {
