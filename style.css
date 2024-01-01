@@ -5,7 +5,7 @@
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -66,11 +66,24 @@ body {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
   background-image: url("images/wave.svg");
   padding: 0 10px;
+  z-index: 2;
+}
+
+.nav2 {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 50px;
+  z-index: 1;
 }
 
 .navbar-links ul {
@@ -204,7 +217,7 @@ a:hover {
   background-color: rgb(255, 255, 255);
   height: 100%;
   position: relative;
-  /* margin-top: -92px; */
+  margin-top: 40px;
 }
 
 .presentazione-md {
@@ -654,6 +667,10 @@ textarea {
     margin-left: 30px;
   }
 
+  .container-xxl {
+    margin-top: -30px;
+  }
+
   .goBack {
     position: fixed;
     bottom: 30px;
@@ -707,6 +724,11 @@ textarea {
   .navbar {
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
+  }
+
+  .nav2 {
+    display: none;
   }
 
   .navbar-links ul {
