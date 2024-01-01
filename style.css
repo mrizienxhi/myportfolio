@@ -69,14 +69,30 @@ body {
   position: relative;
 }
 
+.enxhi {
+  position: relative;
+  z-index: 2;
+}
+
+.intTitle img {
+  background-image: url(/images/pink.jpg);
+  position: absolute;
+  top: 5px;
+  height: 20px;
+  width: 110%;
+  z-index: -1;
+}
+
 .hoverText {
-  font-size: 20px;
   display: flex;
   position: absolute;
   bottom: -10px;
-  left: 160px;
+  left: 100px;
   display: none;
   opacity: 1;
+  font-family: monospace;
+  font-size: 17px;
+  font-weight: 500;
 }
 
 .intTitle:hover > .hoverText {
