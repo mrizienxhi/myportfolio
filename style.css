@@ -509,8 +509,21 @@ textarea {
   right: 40px;
 }
 
-.goBack img {
+.imgCv {
+  position: fixed;
+  bottom: 110px;
+  right: 40px;
+  z-index: 1;
   width: 50px;
+}
+
+.goBack img,
+.downloadCV img {
+  width: 50px;
+}
+
+.imgCv:hover {
+  cursor: url("./images/pawprint.png"), auto;
 }
 
 .goBack img:hover {
@@ -523,16 +536,20 @@ textarea {
     max-width: 180px;
   }
 
+  .imgCv {
+    display: none;
+  }
+
   .containermyphoto {
     display: flex;
     justify-content: flex-end;
     width: 50%;
   }
-  
+
   .containermyphoto .myphoto {
     width: 100%;
   }
-  
+
   .introduction {
     width: 100%;
     display: flex;
@@ -639,7 +656,7 @@ textarea {
     right: 20px;
   }
 
-  .goBack img {
+  .goBack {
     width: 40px;
   }
 
