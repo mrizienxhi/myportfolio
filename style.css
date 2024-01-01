@@ -576,11 +576,11 @@ textarea {
     display: none;
   }
 
-  .intTitle:hover > .hoverText {
+  .imgCv {
     display: none;
   }
 
-  .imgCv {
+  .intTitle:hover > .hoverText {
     display: none;
   }
 
@@ -694,6 +694,10 @@ textarea {
   .logoenxhi {
     margin-top: 38px;
     margin-left: 30px;
+  }
+
+  .container {
+    border: none;
   }
 
   .container-xxl {
