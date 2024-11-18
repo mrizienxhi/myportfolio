@@ -582,6 +582,19 @@ textarea {
   cursor: url("./images/pawprint.png"), auto;
 }
 
+.projectContainer {
+  margin-top: 35px;
+}
+
+.firstProject {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin-top: 40px;
+}
+
 @media (max-width: 800px) {
   .col-4 {
     min-width: 130px;
